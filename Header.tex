@@ -1,0 +1,87 @@
+%!TEX root = main.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%      Configuration options
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{floatflt} % allow floating figures
+\usepackage{pdfsync} % allow easy editing with pdf files
+\renewcommand*\rmdefault{ppl}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage[bookmarks=true,pdfpagelabels=true]{hyperref} % pdf bookmarks
+
+% Pour le texte en français
+\usepackage[latin1]{inputenc}
+\usepackage[english]{babel}
+\selectlanguage{english}
+%\usepackage[cyr]{aeguill}
+%\usepackage[francais]{babel}
+
+\usepackage{amsmath,amssymb,bm}	  % math options
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{xcolor}			  % graphic and colors
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{paralist}
+
+%\usepackage{lmodern}
+%\usepackage{garamondx}
+%\usepackage[garamondx,cmbraces]{newtxmath}
+
+
+% avoid widow and club
+\widowpenalty=10000
+\clubpenalty=10000  		
+\raggedbottom
+
+\DeclareSIUnit\pb{\pico\barn}
+\DeclareSIUnit\fb{\femto\barn}
+\DeclareSIUnit\mb{\milli\barn}
+\DeclareSIUnit\cm{\centi\metre}
+\DeclareSIUnit\mum{\micro\metre}
+\DeclareSIUnit\mm{\milli\metre}
+\DeclareSIUnit\mrad{\micro\radian}
+\DeclareSIUnit\ns{\nano\second}
+\newcommand{\met}{$\ensuremath{\not\!\!{E_{T}}}$}
+\newcommand{\ns}{\si{\ns}}
+\newcommand{\cm}{\si{\cm}}
+\newcommand{\pb}{\si{\pb}}
+\newcommand{\fb}{\si{\fb}}
+\newcommand{\mb}{\si{\mb}}
+\newcommand{\tev}{\si{\TeV}}
+\newcommand{\gev}{\si{\GeV}}
+
+% Format for UCL publications
+\usepackage[a4paper,total={12cm,20cm},centering,includehead]{geometry}
+\setlength{\parskip}{1.6ex plus 0.5ex minus 0.2ex}
+\setlength{\parindent}{0cm}
+\renewcommand{\baselinestretch}{1.1}
+
+% Fancy Header and Footer Style Options
+\usepackage{fancyhdr}
+\pagestyle{fancy} \fancyfoot{}
+\renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection.\ #1}}
+\fancyhead[LE,RO]{\small\thepage} 
+\fancyhead[RE]{\sl\small\leftmark}
+\fancyhead[LO]{\sl\small\rightmark}
+\renewcommand{\headrulewidth}{0.5pt}
+
+\usepackage{sectsty}
+\sectionfont{\fontsize{16}{18}\usefont{T1}{ppl}{b}{n}\selectfont}
+\subsectionfont{\fontsize{13}{15}\usefont{T1}{ppl}{b}{n}\selectfont}
+\subsubsectionfont{\fontsize{11}{13}\usefont{T1}{ppl}{b}{n}\selectfont}
+
+\usepackage[Lenny]{fncychap}
+\ChNameVar{\fontsize{14}{16}\usefont{OT1}{ppl}{m}{n}\selectfont}
+\ChNumVar{\fontsize{60}{62}\usefont{OT1}{ppl}{m}{n}\selectfont}
+\ChTitleVar{\fontsize{24}{26}\usefont{OT1}{ppl}{b}{n}\selectfont}
+
+\usepackage{makeidx} 
+\makeindex
