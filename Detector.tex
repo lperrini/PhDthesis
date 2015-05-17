@@ -192,8 +192,8 @@ Other Lorentz invariants are the transverse momentum $p_T$ defined as
 p_T=\sqrt{p^2_x+p^2_y}\mbox{ ,}
 \end{equation}
 %##########################################################################################################
-where $p_x$ and $p_y$ are the projections of the particle-four momentum $p^\mu$%=(E,p_x,p_y,p_z)$
-on the $x$ and the $y$ axes, respectively, and the distance $\Delta R$ between two particles with difference in 
+where $p_x$ and $p_y$ are the projections of the particle-four momentum $p^\mu$ on the $x$ and the $y$ axes, 
+respectively, the transverse energy $E_T=E\sin\theta$, and the distance $\Delta R$ between two particles with difference in 
 pseudorapidity and azimuthal angle equal to $\Delta\eta$ and $\Delta\phi$, respectively:
 %##########################################################################################################
 \begin{equation}
@@ -227,7 +227,7 @@ At the same power of curving, thus, a solenoid is more compact than a toroid.
 The CMS magnet is $12.9$~\si{\metre} long and it is constituted by an internal bore
 with a radius of $5.9$~\si{\metre}, which contains the tracker system and
 the calorimeters. The magnet is composed of $2168$ turns and it is cooled
-at the temperature of $-268.5$~\textdegree C. The return field is guided
+at the temperature of $-268.5~\si{\degreeCelsius}$. The return field is guided
 by an external iron-yoke, which is $1.55$~\si{\metre} and $1.45$~\si{\metre} thick
 in the barrel and in the endcap, respectively.
 
@@ -275,7 +275,7 @@ in $\phi$ in order to benefit from the effect of the Lorentz force on the spatia
 Thanks to the large deflection Lorentz-angle created by the magnetic field
 on the trajectory of the charged particles is possible to obtain a resolution of $10$~\si{\mum} 
 along $\phi$ and $\approx 20$~\si{\mum} along $z$. Also in the endcap disks, the sensors 
-are arranged in a ``turbine'' geometry (the blades are rotated by $20\textdegree$) 
+are arranged in a ``turbine'' geometry (the blades are rotated by $20~\si{\degreeCelsius}$) 
 in order to benefit from the Lorentz effect. The total active area of the pixel detector is of about 1~\si{m}$^2$.
 
  once crossed by the hadornic shower.
@@ -344,7 +344,7 @@ of the stored energy is dissipated through thermal emission, then, in order to c
 Silicon avalanche photodiodes (APDs) are used as photodetectors in the barrel and
 vacuum phototriodes (VPTs) in the endcaps. Moreover, given that the sensitivity of both the crystals
 and the APD changes with the temperature, the thermal regulation is needed and carried out by a cooling circuit which 
-keeps the operating temperature at ($18\pm0.05$)\textdegree C. 
+keeps the operating temperature at ($18\pm0.05$)~\si{\degreeCelsius}. 
 
 A preshower device is placed in front of the EE, covering the pseudorapidity range 
 $1.653<|\eta|<2.6$. It is a sampling calorimeter composed by two layers of
@@ -417,8 +417,8 @@ high-attenuation-length clear fibers, which convey the light signal to the reado
 where is amplified by hybrid photodiode (HPD).
 
 The high granulatiry in $\eta-\phi$ is obtained by segmenting the scintillators 
-from $\Delta\eta\times\Delta\phi=0.087\times5$\textdegree~in the barrel up to 
-$\Delta\eta\times\Delta\phi=0.35\times10$\textdegree~in the endcaps.
+from $\Delta\eta\times\Delta\phi=0.087\times5$~\si{\degreeCelsius} in the barrel up to 
+$\Delta\eta\times\Delta\phi=0.35\times10$~\si{\degreeCelsius} in the endcaps.
 The HCAL thickness, in terms of nuclear absorption length $\lambda_I$, goes from approximately 
 $5.82~\lambda_I$ in the barrel up to $10.6~\lambda_I$ in the endcaps. However, the barrel-depth is not enough to 
 contain the full shower, then an additional module, the HCAL Outer (HO), is placed
@@ -438,12 +438,74 @@ in the endcaps and $\sigma/E=100\%/\sqrt{E}\oplus5\%$ in the HF~\cite{hcalTDR}.
 \label{subsec:muonsys}
 
 Muons play a major role in the most of the appealing SM and exotic scenarii made available by the 
-LHC physics programme. For these reasons, a sophisticated and complex system has been built
-to redundantly reconstruct muons and measure their kinematics properties, but also to fulfill the function of event-trigger.
-Three types of gaseous detectors have been used:
-%The technology chosen to achieve these
-%purposes was also guided by the need of covering a large surface subject to an intense magnetic field
-%and bodied radiation fluxes. 
+LHC physics programme. Muon detection was crucial for the discovery of the SM Higgs boson in the golden-channel
+H$\rightarrow$ZZ$^*$, decaying in four leptons, or also for the observation of the rare decay 
+B$^0_S\rightarrow\mu^+\mu^-$~\cite{CMS:2014xfa}.
+For these reasons, a sophisticated and complex system has been built to reconstruct muons and 
+measure their kinematics properties, but also to fulfill the function of event-trigger.
+Given the need to cover a large area affected by a magnetic field of variable intensity and 
+radiation, three different kind of gas-ionization detectors have been used in the muon system~\cite{CMS:1997dma},
+as can be seen from the Figure~\ref{fig:muLayout}: the Drift Tubes (DT), the Catode Strip Chambers (CSC), 
+and the Resistive Plate Chambers (RPC).
+
+%##########################################################################################################
+\begin{figure}[hbt]
+  \begin{center}
+    \includegraphics[width=0.98\textwidth]{figDetector/muonLayout.png}
+    \caption{Longitudinal view of the CMS detector in which the different components of the muon system are visible:
+             the Drift Tubes (DT), the Catode Strip Chambers (CSC), and the Resistive Plate Chambers (RPC).
+             The dashed lines correspond to fixed $\eta$ values~\cite{Chatrchyan:2013sba}.} 
+    \label{fig:muLayout}
+  \end{center}
+\end{figure}
+%##########################################################################################################
+
+The DT chambers are made up a $50~\si{\mm}$-thick gold-plated stainless-steel anode wire and an aluminum strip cathode, 
+placed on the shortest side of the cell. The cell is filled with a gas mixture of CO$_2$ (85\%) and Ar (15\%). 
+Because of their time-response ($\approx400~\si{\ns}$~\cite{Chatrchyan:2013sba}), the DT suit as tracking detectors 
+in the barrel region ($|\eta|<1.2$), where the muon flux is weak ($<10~\si{\hertz}/\si{\cm}^2$) and the residual magnetic field is low.  
+The barrel region is segmented in five wheels, $2.5~\si{\m}$ long. Each wheel is divided into 12 sectors and 
+one single sector consists of $250$ drift tubes chambers arranged in four stations (MB1, MB2, MB3, MB4, with MB standing for
+Muon Barrel), each interspersed by an iron-yoke layer. Chambers are staggered to avoid gaps between each other (\emph{crack}) and, thus, muons leaving unmeasured 
+the detector. The MB4 station provides the $\phi$ coordinate measurement only, while MB1, MB2 and MB3, consisting of twelve 
+planes of drift tubes, lead to eight measurements in the $r-\phi$ projection and four along the $z$-axis.
+Then, given the higher number of hits available, the radial resolution ($100~\si{\mum}$) is better than the one
+associated to the $z$-direction ($150~\si{\mum}$). The angular resolution in $\phi$ is $1~\si{\mrad}$.
+
+The CSC detector is placed in the endcap regions ($0.9<|\eta|<2.4$), characterized by a high radiation dose
+and a large, non-uniform magnetic field. The Muon Endcap (ME) system consists of four stations of CSC (ME1, ME2, ME3, ME4), each
+interleaved by one layer of the magnet iron-yoke. Each chamber has a trapezoidal shape and is filled with 
+a gas mixture of Ar (40\%), CO$_2$ (50\%) and CF$_4$ (10\%). Additionally, it consists of six gaps, each
+made of a multi-wire anode layer interspersed by a cathod-strips planes. Wires are $\phi$-oriented and 
+perpendicularly arranged with respect to the strips, which are segmented radially. 
+In each gap, six space measurements are provided: $\phi$ is measured by calculating the center of gravity 
+of the ionic charge induced by avanlanche on the strips once the gas has been inozide, while 
+$r$ is obtained by the electronic charge collected on the anode. The single point resolution 
+is of about $75$-$150~\si{\mum}$ in $\phi$ and $200~\si{\mum}$ in $r$.
+
+As can be seen from the Figure~\ref{fig:muLayout}, a set of RPC is placed both in the barrel ($0<|\eta|<1.2$), 
+and in the endcaps ($0.9<|\eta|<1.6$). The double-gap RPC detectors consist of two single-gap chambers operating in avalanche mode. 
+Both units are assembled back-to-back in order to share a segmented pick-up read-out strips 
+in between, which allows the usage of a lower high voltages (HV) in each single-gap with an effective gain in efficiency. 
+Each chamber consists of two bakelite-electrodes externally covered by a layer of graphite, which is used
+as HV electrode. The whole unit is covered by mylar sheets, serving as HV insulators.
+The gap between the electrodes is $2~\si{\mm}$-thick and is filled with a gas mixture of C$_2$H$_2$F$_4$ (96\%), 
+C$_4$H$_{10}$ (3.5\%) and SF$_4$ (0.5\%). Not ideal for space measurement given the coarse spacial resolution, 
+the RPCs are, instead, crucial for the even-triggering, having a high rate responses (up to $10~\si{\kilo\hertz}/\si{\cm}^2$).
+
+
+\subsection{Trigger and Data acquisition}
+\label{subsec:triDAQ}
+
+
+
+
+
+
+
+
+
+
 
 
 
