@@ -94,7 +94,7 @@ the expected average number of p-p interactions per bunch crossing is 21 for ins
     \subfloat[]{\includegraphics[width=0.49\textwidth]{figDetector/pileup_pp_2012.pdf}\label{fig:LHCpu}}
     \caption{(a) Cumulative luminosity versus week delivered to (blue), and recorded by CMS (orange) 
              during stable beams and for p-p collisions at 8~TeV centre-of-mass energy in 2012.
-             (b) Mean number of interactions per bunch crossing~\cite{LumiPublic}.} 
+             (b) Mean number of interactions per bunch crossing (from Ref.~\cite{LumiPublic}).} 
     \label{fig:LHClumiPU}
   \end{center}
 \end{figure}
@@ -162,8 +162,8 @@ in Figure~\ref{fig:CMSview}, each CMS sub-detector is hosted in both the barrel 
 %##########################################################################################################
 \begin{figure}[hbt]
   \begin{center}
-    \includegraphics[width=0.98\textwidth]{figDetector/CMSnc.jpg}
-    \caption{Tridimensional representation of the CMS apparatus.} 
+    \includegraphics[width=0.98\textwidth]{figDetector/cms_complete_labelled.png}
+    \caption{Tridimensional representation of the CMS apparatus (from Ref.~\cite{Chatrchyan:2008aa}).} 
     \label{fig:CMSview}
   \end{center}
 \end{figure}
@@ -184,7 +184,18 @@ Instead of the polar angle $\theta$, the pseudorapidity $\eta$, defined as
 %##########################################################################################################
 
 is used as it is invariant under Lorentz boosts along the $z$ axis.
-In terms of pseudorapidity, the barrel covers a region $|\eta|$
+
+%A schematic rapresentazion of the CMS coordinate system is shown in Figure~\ref{}
+%##########################################################################################################
+%\begin{figure}[hbt]
+%  \begin{center}
+%    \includegraphics[width=0.68\textwidth]{figDetector/cms_coordinates.png}
+%    \caption{Tridimensional representation of the CMS apparatus.} 
+%    \label{fig:CMSview}
+%  \end{center}
+%\end{figure}
+%##########################################################################################################
+
 
 Other Lorentz invariants are the transverse momentum $p_T$ defined as
 %##########################################################################################################
@@ -256,10 +267,10 @@ A schematic view of the inner tracker is shown in Figure~\ref{fig:trackerLayout}
 %##########################################################################################################
 \begin{figure}[hbt]
   \begin{center}
-    \includegraphics[width=0.98\textwidth]{figDetector/stripLayout.png}
+    \includegraphics[width=0.98\textwidth]{figDetector/trackerLayout.png}
     \caption{Schematic layout of CMS tracker. The main components are visible:
              Pixel Detector (PIXEL), Tracker Inner barrel (TIB), Tracker Outer barrel
-             (TOB), Tracker Inner Disk (TID), Tracker endcap (TEC).~\cite{Chatrchyan:2008aa}} 
+             (TOB), Tracker Inner Disk (TID), Tracker endcap (TEC) (from Ref.~\cite{Chatrchyan:1704291}).} 
     \label{fig:trackerLayout}
   \end{center}
 \end{figure}
@@ -278,14 +289,13 @@ along $\phi$ and $\approx 20$~\si{\mum} along $z$. Also in the endcap disks, the
 are arranged in a ``turbine'' geometry (the blades are rotated by $20~\si{\degreeCelsius}$) 
 in order to benefit from the Lorentz effect. The total active area of the pixel detector is of about 1~\si{m}$^2$.
 
- once crossed by the hadornic shower.
 %##########################################################################################################
-\begin{figure}[hbt]
+\begin{figure}[h!]
   \begin{center}
     \subfloat[]{\includegraphics[width=0.74\textwidth]{figDetector/pixelLayout.png}\label{fig:pixelLayout}}
     \subfloat[]{\includegraphics[width=0.24\textwidth]{figDetector/pixelBarrel.png}\label{fig:pixelBarrel}}
     \caption{(a) Perspective view of the CMS pixel system. (b) Radial cut of the mechanical 
-	    frame of first layer of the barrel.~\cite{Karimaki:368412}.} 
+	    frame of first layer of the barrel (from Ref.~\cite{Karimaki:368412}).} 
     \label{fig:pixels}
   \end{center}
 \end{figure}
@@ -346,12 +356,25 @@ vacuum phototriodes (VPTs) in the endcaps. Moreover, given that the sensitivity 
 and the APD changes with the temperature, the thermal regulation is needed and carried out by a cooling circuit which 
 keeps the operating temperature at ($18\pm0.05$)~\si{\degreeCelsius}. 
 
-A preshower device is placed in front of the EE, covering the pseudorapidity range 
+A preshower device (ES) is placed in front of the EE, covering the pseudorapidity range 
 $1.653<|\eta|<2.6$. It is a sampling calorimeter composed by two layers of
 lead radiator, behind each of that silicon strip sensors are placed.
 The preshower is mostly designed to discriminate genuine photons from those
 coming from the electromagnetic decay of a neutral pion, but it also leads to an improvement in the 
 electrons identification and in the accuracy in determining electrons and photons position.
+The longitudinal view of one quarter of the CMS ECAL is shown in Figure~\ref{fig:ecalLayout}.
+
+%##########################################################################################################
+\begin{figure}[hbt]
+  \begin{center}
+    \includegraphics[width=0.98\textwidth]{figDetector/ecalLayout.png}
+    \caption{Longitudinal view of one quarter of the CMS ECAL detector in which the ECAL Barrel (EB), the ECAL Endcap (EE) and the Preshower
+             (ES) are visible.  
+             The dashed lines correspond to fixed $\eta$ values (from Ref.~\cite{Chatrchyan:2008aa}).} 
+    \label{fig:ecalLayout}
+  \end{center}
+\end{figure}
+%##########################################################################################################
 
 The ECAL energy resolution, measured using electron beams with energy
 between $20$ and $250~\si{\GeV}$, can be parametrized as: 
@@ -398,7 +421,7 @@ as can be seen from Figure~\ref{fig:hcalLayout}.
     \includegraphics[width=0.98\textwidth]{figDetector/HCALlayout.png}
     \caption{Longitudinal view of the CMS detector in which the different components of the HCAL are visible:
              the Hadron Barrel (HB), Endcap (HE), Outer (HO) and Forward (HF) calorimeters. 
-             The dashed lines correspond to fixed $\eta$ values~\cite{Chatrchyan:2008aa}.} 
+             The dashed lines correspond to fixed $\eta$ values (from Ref.~\cite{Chatrchyan:2008aa}).} 
     \label{fig:hcalLayout}
   \end{center}
 \end{figure}
@@ -454,7 +477,7 @@ and the Resistive Plate Chambers (RPC).
     \includegraphics[width=0.98\textwidth]{figDetector/muonLayout.png}
     \caption{Longitudinal view of the CMS detector in which the different components of the muon system are visible:
              the Drift Tubes (DT), the Catode Strip Chambers (CSC), and the Resistive Plate Chambers (RPC).
-             The dashed lines correspond to fixed $\eta$ values~\cite{Chatrchyan:2013sba}.} 
+             The dashed lines correspond to fixed $\eta$ values (from Ref. ~\cite{Chatrchyan:2013sba}).} 
     \label{fig:muLayout}
   \end{center}
 \end{figure}
@@ -496,6 +519,80 @@ the RPCs are, instead, crucial for the even-triggering, having a high rate respo
 
 \subsection{Trigger and Data acquisition}
 \label{subsec:triDAQ}
+
+At the design luminosity ($\mathcal{L}=$10$^{34}$\cm$^{-2}$\si{s}$^{-1}$), the LHC protons crossing frequency 
+($40~\si{\mega\hertz}$ for $25~\si{\ns}$ spaced beams) translates into $\approx 20$ inelastic interactions per bunch crossing and 
+$\approx 1~\si{\mega\byte}/$event of zero-suppressed data in the CMS read-out systems. Performing a permanent storage of such 
+amount of data is technically awkward, therefore a drastic rate reduction must be achieved. To accomplish this goal, a trigger and 
+data acquisition (TriDAQ) system is used. CMS adopts a two-level system of rate reduction, which consists of a 
+Level-1 (L1) Trigger~\cite{Bayatyan:706847}, followed by a High-Level Trigger (HLT)~\cite{Sphicas:2002gg}.
+
+The L1 trigger is a real on-line and hardware-based event filter. It reduces the data-rate of a factor $\mathcal{O}(10^3)$,
+providing an output rate limit of $100~\si{\kilo\hertz}$. During the finite L1 trigger latency-time of $3.2~\si{\mum}$, 
+in which the trigger decides whether accepting an event or not, 128 bunch-crossing information are stored in pipelined FIFO memories.
+Due to the short decision-time, only the information provided by the calorimeters and the muon system are exploited.
+In particular, for trigger purposes, calorimeters are segmented into \emph{trigger towers} with a size equal to
+$0.087\times 5^\circ$ in $\Delta\eta\times\Delta\phi$ up to $|\eta|<1.74$ and larger at higher $\eta$ values.
+ECAL, HCAL, HF, DTs, CSCs and RPCs contribute to build the L1 trigger components at different levels: \emph{local}, \emph{regional} and 
+\emph{global}. The local components are extracted from energy deposits measured in the calorimeter trigger towers, 
+and track segments or hit patterns in the muon chambers. These primitives are then combined to build
+trigger objects which give rise to the regional components. At this level, DTs and CSCs join segments to complete 
+the muon tracks, while the RPCs perform unambiguously the tracks/bunch-crossing matching. In the calorimeters, the electron
+and photon identification is performed and additional information about muon isolation and compatibility with 
+minimally ionizing particles (MIP) are also collected. Once measured, all these regional components are ranked according to 
+whether they meet or not some thresholds and quality requirements. The highest-ranked components are then built indipendently by 
+the Global Calorimeter Trigger (GCT) and the Global Muon Trigger (GMT) and transferred to the final Global Trigger (GT), 
+the top entity of the Level-1 hierarchy. At this point, based on the best muon, electron and photon candidates found, 
+and the measured $E_T$, \met, number of jets, and scalar sum of some hadronic activity ($H_T$), 
+the L1 trigger decides whether rejecting the event or not. 
+
+Once the L1 trigger processing is finished, data are read-out from the detector through the 
+Data Acquisition System (DAQ). Thus the complete information is passed to the event builder network, and then to 
+the fully-software based HLT system. The HLT reduces the data-rate to about $100~\si{\hertz}$ in about $10~\si{\mum\s}$
+for most of the event processed. The main pillar which the HLT algorithms are based on is the ~\emph{regional reconstruction}:
+the idea is processing only those events found already interesting by the L1 trigger and fastly discard all the rest in 
+order to maximize the latency reduction. This has led to the development of three ``virtual'' trigger levels: the first level 
+accesses only the muon and calorimetric data, the second level includes the information provided by the tracking system.
+
+Given the strong algorithm flexibility, the HLT ``menu'' has been enriched, in the last few years, 
+with many HLT sets of \emph{trigger paths}, each customized to be tuned with the collider configuration.
+
+\subsection{CMS software, computing and simulation}
+\label{subsec:CMSsim}
+
+Events accepted by the HLT are finally written on disks and made available for offline-data analysis by an off-line system of computing~\cite{CMS:2005aa}.
+The world-wide scale of data distribution has given rise to the need of having a common software framework,
+%\footnote{The CMS software framework is called \texttt{CMSSW} and it is a collection of tools and algorithms used for the event simulation and reconstruction.}
+and a common infrastructure of data-storage. The former, an object-oriented framework written in \texttt{C++} and \texttt{Python},
+is fully customizable for any computer architecture and it is constantly developed in a high-performance, flexible and manageable way. 
+The latter has the name of Worldwide LHC Computing Grid (WLCG) and it is used by physicist all around the world to access CMS data. 
+It consists of a computing and storage system distributed among different terminals around the world, each of which is interfaced with a backup-base at CERN: the Tier0 (T0).
+The T0 receives data from the CMS TriDAQ system and organizes them in Primary Dataset (PD) depending on the associated HLT paths. 
+Examples of PD are provided by those will be used in the analyses described in this thesis: \texttt{DoubleMuon} and \texttt{DoubleElectron}.
+The datasets are then sent to Tier1 (T1) centers, which are systems of permanent storage, but which also provide the necessary CPU for
+skimming and calibration processes. More numerous and smaller are the Tier2 (T2) centers, characterized by conspicuous CPU resources able
+to provide capacity for analysis, calibration activities and Monte Carlo (MC) simulation. 
+
+On the way of deeply understanding the detector effect in order to properly optimize the analysis strategies,
+MC processes play a crucial role. The simulation workflow starts with the usage of MC generators to 
+generate the interesting process, after having fixed the theoretical model behind. Several MC generators are available
+to suit a wide range of physics processes and few of them will be described in details in the Section~X.Y. 
+Once generated, the propagation of the particles inside the detector, and the interaction with its components, 
+is simulated using the Geant4 toolkit~\cite{Agostinelli:2002hh}. Geant4 also models the geometry of the different CMS subdetectors, 
+the map of the magnetic field and the front-end electronic. At the end of the chain, the whole trigger system is modelled and the simulated event
+is ready to be written on disks and be fully reconstructed as if it was a real data event.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
